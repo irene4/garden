@@ -4,6 +4,8 @@ const port = process.env.PORT || 3002;
 const db = require("./util/db");
 const bodyParser = require("body-parser");
 const router = require("./router");
+const passport = require('passport')
+const Strategy = require('passport-local').Strategy
 const path = require("path");
 
 const app = express();
